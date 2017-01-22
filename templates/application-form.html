@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css"/>
+    <title>Application Form</title>
+  </head>
+  <body>
+    <form class="application" method="POST">
+      <h2 class="application-heading">Complete This Application</h2>
+      <p> Want a job? Please complete this application and submit.
+      <div class="first-name">
+        <label for="first-name">First Name:  </label>
+        <input type="text" name="first-name" required>
+      </div>
+      <div class="last-name">
+        <label for="last-name">Last Name:  </label>
+        <input type="text" name="last-name" required>
+      </div>
+      <div class="salary-requirement">
+        <label for="salary-requirement">Salary Requirement:  </label>
+        <input type="number" min="1000.00" step="1000.00" name="salary" required>
+      </div>
+      <div class="position">
+        <label for="position">Select which job you are applying for:  </label>
+        <select name="job" required>
+          {% for item in jobs_list %}
+            <option value="{{ item }}">{{ item }}</option>
+          {% endfor %}
+        </select>
+      <br>
+      </div>
+      <div class="submit">
+        <label for="submit"><input type="submit">
+    </form>
+  </body>
+</html>
+
+{% endblock %}
+

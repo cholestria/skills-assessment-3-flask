@@ -1,0 +1,20 @@
+body {
+    color: white;
+    text-align: center;
+}
+.main {
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -100px;
+  background: rgb(0, 0, 0); /* Fall-back for browsers that don't support rgba */
+  background: rgba(0, 0, 0, .5);
+}
+.apply {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -100px;
+}

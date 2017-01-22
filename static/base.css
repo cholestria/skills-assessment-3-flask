@@ -1,0 +1,17 @@
+body {
+    color: white;
+    background-color: gray;
+}
+.flash {
+    background-color: black;
+}
+footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    text-align: center;
+    background-color: black;
+    color: white;
+}

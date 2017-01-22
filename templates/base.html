@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/static/base.css"/>
+  </head>
+
+  <body>
+  <!-- Show flashed messages -->
+  {% with messages = get_flashed_messages() %}
+      {% for message in messages %}
+          <div class="flash">{{ message }}</div>
+      {% endfor %}
+  {% endwith %}
+
+  {% block body %}
+    body of page  
+  {% endblock %}
+      <footer>
+      <p>Copyright Jobs Ahoy 2017. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
